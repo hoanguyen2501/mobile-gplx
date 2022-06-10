@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="team2.mobileapp.gplx.view.ReviewTestActivity"
+   >
+
+
+    <include
+        android:id="@+id/header_activity"
+        layout="@layout/header_activity_app" />
+   <TextView
+       android:layout_margin="20dp"
+       android:id="@+id/title_layouts"
+       android:layout_below="@+id/header_activity"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="35dp"
+       android:textColor="@color/black"
+       android:text="Tất cả"/>
+    <ListView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        android:id="@+id/lvAllQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layouts"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:orientation="horizontal"
+        tools:listitem="@layout/question_view_list_item"></ListView>
+
+    <include
+        android:id="@+id/bottom_bar"
+        layout="@layout/activity_navigation" />
+
+
+</RelativeLayout>

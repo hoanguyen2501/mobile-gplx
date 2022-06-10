@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/notice_board_search"
+    tools:context="team2.mobileapp.gplx.view.NoticeBoardActivity">
+
+
+    <include
+        android:id="@+id/header_activity"
+        layout="@layout/header_activity_app" />
+
+    <TextView
+        android:id="@+id/title_layouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_activity"
+        android:layout_margin="20dp"
+        android:text="Tất cả"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layouts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_radius"
+            android:backgroundTint="#34C6C6C6"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/search_icon" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Tìm kiếm..."
+                android:textSize="30dp"
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/green_main"
+                android:textColorHint="@color/gray_milk" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvItems"
+        android:paddingBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_search"
+        android:divider="@null"
+        android:scrollbars="none"
+        tools:listitem="@layout/listview_notice_board_item">
+
+
+    </ListView>
+
+    <include
+        android:id="@+id/bottom_bar"
+        layout="@layout/activity_navigation" />
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+
+        style="@style/ImageRounder_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/green_main"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_question_item_listview"
+            style="@style/TextDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_radius_10"
+            android:padding="10dp"
+            android:text="Câu hỏi thứ "
+            android:textAlignment="textStart"
+            android:textColor="#232323"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_question_item_listview"
+            android:layout_centerHorizontal="true"></ImageView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_board"
+
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_list_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="27dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_board_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_list_answer"
+                android:text="Đáp án:"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_result_item_listview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_board_code"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_radius_10"
+                android:padding="10dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:textColor="#FF5607"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

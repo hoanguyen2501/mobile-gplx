@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <RelativeLayout
+        android:id="@+id/header_activity"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="50dp"
+     >
+
+
+        <ImageView
+            android:id="@+id/logo_top_board"
+            android:layout_width="0.6in"
+            android:layout_height="0.4in"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_title_board"
+            style="@style/TextTitle"
+            android:layout_width="2in"
+            android:layout_height="0.4in"
+            android:layout_below="@+id/logo_top_board"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_radius"
+            android:backgroundTint="@color/green_main"
+            android:gravity="center"
+            android:text="Các câu đã chọn"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+
+            />
+    </RelativeLayout>
+</FrameLayout >

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="team2.mobileapp.gplx.view.GuideActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0.8in"
+            android:padding="10dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:id="@+id/number_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_positionQuestion"
+                    style="@style/TextQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textSize="40dp" />
+
+                <TextView
+                    style="@style/TextQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/tv_totalQuestion"
+                    style="@style/TextQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textSize="40dp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/determinateBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_question"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="100dp"
+                android:animationResolution="1000"
+                android:indeterminate="false"
+                android:max="100"
+                android:maxHeight="30dp"
+                android:minHeight="30dp"
+                android:progress="10"
+                android:progressDrawable="@drawable/progress_custom" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_question"
+            style="@style/TextQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress_bar"
+            android:layout_marginLeft="40dp"
+            android:padding="20dp"
+            android:text="Câu hỏi ?"
+            android:textSize="35dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_question"
+            android:scaleType="fitCenter" />
+
+        <ScrollView
+            android:id="@+id/group_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_question"
+            android:layout_marginBottom="120dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+                <RadioGroup
+                    android:id="@+id/rg_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rd_answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Câu trả lời thứ nhất"
+                        android:textSize="30dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/rd_answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Câu trả lời thứ hai "
+                        android:textSize="30dp" />
+
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_arrow"
+            app:backgroundTint="#00FFFFFF"
+            app:elevation="0dp"
+            app:fabSize="mini" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/btn_prev"
+                    style="@style/ButtonRouder"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="Câu trước"
+                    android:textAlignment="center"
+                    android:textSize="30dp" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    style="@style/ButtonRouder"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="Câu sau"
+                    android:textAlignment="center"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_bar_question"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:visibility="invisible"
+        app:headerLayout="@layout/layout_header_show_test_progress"
+        >
+        <GridLayout
+            android:id="@+id/layout_question_bar"
+            android:columnCount="4"
+            android:rowCount="7"
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="true"
+            android:padding="10dp"
+            android:useDefaultMargins="true"
+            android:rowOrderPreserved="false">
+              <TextView
+                  android:id="@+id/btn_question"
+                  style="@style/QuestionButton"
+                  android:text="1"/>
+            <TextView
+                android:id="@+id/btn_question2"
+                style="@style/QuestionButton"
+                android:backgroundTint="@color/yellow"
+                android:text="2"/>
+        </GridLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPLX</string>
+    <string name="text_boarding">SHARE - INSPIRE - CONNECT</string>
+    <string name="text_get_started">BẮT ĐẦU</string>
+    <string name="text_forgot_pass">QUÊN MẬT KHẨU</string>
+
+    <string name="text_signup">ĐĂNG KÝ</string>
+    <string name="text_login">ĐĂNG NHẬP</string>
+    <string name="text_verification">XÁC THỰC</string>
+    <string name="text_type_your_email">NHẬP EMAIL </string>
+    <string name="text_set_new_password">XÁC NHẬN MẬT KHẨU MỚI</string>
+    <string name="text_verify">XÁC THỰC</string>
+    <string name="text_send">GỬI</string>
+    <string name="list_guide_line">
+        <h2>HƯỚNG DẪN THI</h2>\n
+        <li>SỐ LƯỢNG CÂU HỎI: 25 CÂU</li>\n
+        <li>YÊU CẦU LÀM ĐÚNG: 21/25 CÂU</li>\n
+        <li>THỜI GIAN:19 PHÚT</li>\n
+    </string>
+
+    <string name="Tutor_title">Hướng dẫn</string>
+    <string name="A1_Title">THI THỬ BẰNG LÁI XE MÁY A1</string>
+    <string name="A1_tutor">Cấu trúc bộ đề thi sát hạch giấy phép lái xe hạng A1 sẽ bao gồm 25 câu hỏi, mỗi câu hỏi chỉ có duy nhất 1 đáp trả lời đúng. Khác hẳn với bộ đề thi luật cũ là 2 đáp án. Mỗi đề thi chúng tôi sẽ bố trí từ 2 - 4 câu hỏi điểm liệt để học viên có thể làm quen và ghi nhớ, tránh việc làm sai câu hỏi liệt.\nSố lượng câu hỏi: 25 Câu.\nYêu cầu làm đúng 21/25 Câu.\nThời gian: 19 Phút. </string>
+    <string name="A2_Title">THI THỬ BẰNG LÁI XE MÁY A2</string>
+
+    <string name="A2_tutor">Cấu trúc bộ đề luyện thi sát hạch A2 luật mới áp dụng chính thức từ 01/08/2020 sẽ bao gồm 25 câu hỏi, mỗi câu hỏi có duy nhất 1 đáp trả lời đúng. Mỗi đề thi A2 bố trí từ 2 - 4 câu hỏi điểm liệt để học viên có thể làm quen và ghi nhớ, tránh việc làm sai câu hỏi liệt. Trong kỳ thi thật cấu trúc đề thi sẽ được sắp xếp theo dạng ngẫu nhiên, yêu cầu học viên phải học - hiểu để vượt qua các câu hỏi, tránh tình trạng học tủ hay học vẹt.\n Số lượng câu hỏi: 25 Câu.\n Yêu cầu làm đúng: 23/25 Câu.\n Thời gian: 19 Phút.</string>
+
+    <string name="B1_title">THI LÝ THUYẾT B1</string>
+
+    <string name="B1_tutor">Bộ đề sát hạch cấp giấy phép lái xe ô tô hạng B1 số tự động gồm 30 câu trong đó: Có 01 câu về khái niệm; 01 câu hỏi về tình huống mất an toàn giao thông nghiêm trọng; 06 câu về quy tắc giao thông; 01 câu về tốc độ, khoảng cách; 01 câu về văn hóa giao thông và đạo đức người lái xe; 01 câu về kỹ thuật lái xe; 01 câu về cấu tạo sửa chữa; 09 câu về hệ thống biển báo đường bộ; 09 câu về giải các thế sa hình và kỹ năng xử lý tình huống giao thông.\n Số lượng câu hỏi: 30 Câu.\n Yêu cầu làm đúng: 27/30 Câu.\n Thời gian: 20 Phút (Không sai câu điểm liệt).</string>
+
+    <string name="B2_title">THI LÝ THUYẾT B2</string>
+
+    <string name="B2_tutor">Dựa theo cấu trúc đề thi lý thuyết B2 chính thức thì mỗi đề thi sát hạch lý thuyết B2 sẽ bao gồm: 1 câu hỏi phần khái niệm; 7 câu hỏi về quy tắc giao thông; 1 câu hỏi nghiệp vụ vận tải; 1 câu về tốc độ khoảng cách; 1 câu hỏi về văn hóa và đạo đức người lái xe; 2 câu hỏi về kỹ thuật lái xe; 1 câu hỏi về cấu tạo sữa chữa; 10 câu hỏi biển báo; 10 câu hỏi sa hình kèm theo 1 câu hỏi điểm liệt (tình huống gây mất an toàn giao thông nghiêm trọng). Học viên ôn tập cần đáp án ứng yêu cầu sau:\n Số câu hỏi phải đúng: 32/35 câu trở lên là đậu.\n Thời gian làm đề thi: 22 phút.\n Yêu cầu đặc biệt: KHÔNG LÀM SAI CÂU ĐIỂM LIỆT (câu hỏi *) </string>
+</resources>

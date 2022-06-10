@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="team2.mobileapp.gplx.view.GroupBoardingActivity">
+
+
+    <include
+        android:id="@+id/header_activity"
+        layout="@layout/header_activity_app" />
+
+    <TextView
+        android:id="@+id/title_layouts_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_activity"
+        android:layout_margin="10dp"
+        android:text="Tất cả"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_all_traffic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layouts_all"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/background_group_traffic"
+        android:padding="50dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_title_group_test"
+                style="@style/PersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Tất cả"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/tv_num_group_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_group_test"
+                android:layout_centerHorizontal="true"
+                android:text="0 câu"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <TextView
+
+        android:id="@+id/title_layouts_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_all_traffic"
+        android:layout_margin="20dp"
+        android:text="Loại biển báo"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+    <ListView
+        android:paddingBottom="60dp"
+        android:id="@+id/lv_group_boarding_sign"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layouts_item"
+        android:divider="@null"
+        android:scrollbars="none"
+        tools:listitem="@layout/listview_group_boarding_item"/>
+
+
+    <include
+        android:id="@+id/bottom_bar"
+        layout="@layout/activity_navigation" />
+
+
+</RelativeLayout>

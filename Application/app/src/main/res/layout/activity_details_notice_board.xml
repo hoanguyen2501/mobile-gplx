@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="team2.mobileapp.gplx.view.ReviewTestActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/header_activity"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/logo_top_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_title_board"
+            style="@style/TextTitle"
+
+            android:layout_below="@+id/logo_top_board"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_title"
+            android:text="Chi tiết biển báo"
+            android:textColor="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:textSize="20dp"
+
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_activity"
+        android:layout_marginBottom="120dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_title_board_details"
+                style="@style/TextTitle"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:text="BIỂN CẤM A"
+                android:textAllCaps="true"
+                android:textColor="@color/red" />
+
+            <ImageView
+                android:id="@+id/iv_image_board_details"
+                style="@style/ImageRounder"
+                android:layout_width="180dp"
+                android:layout_height="170dp"
+                android:layout_below="@+id/tv_title_board_details"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_spotlight_arc" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_radius_10"
+                android:backgroundTint="#75D0D3"
+                android:id="@+id/tv_description_board_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv_image_board_details"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="20dp"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:text="Chi tiết biển báo"
+                android:textSize="16dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/activity_navigation" android:id="@+id/bottom_bar" />
+
+
+</RelativeLayout>

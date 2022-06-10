@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="team2.mobileapp.gplx.view.A1_TestActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.3in"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+
+        />
+
+    <TextView
+        android:id="@+id/text_choice_category"
+        style="@style/TextTitle"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_radius_10"
+        android:backgroundTint="@color/green_main"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:text="HẠNG A1"
+
+        android:width="200dp"
+        android:textColor="@color/white"
+        android:textSize="30sp">
+
+    </TextView>
+
+
+    <ScrollView
+        android:id="@+id/scroll_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_choice_category"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:overScrollMode="always">
+
+        <RelativeLayout
+            android:id="@+id/list_choice_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <RelativeLayout
+                android:id="@+id/btn_radom"
+                style="@style/AroundButton"
+                android:layout_width="220dp"
+                android:layout_height="320dp"
+                android:padding="10dp"
+                android:background="@drawable/button_radius_10"
+                android:backgroundTint="@color/green_main">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1.2in"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/file_dock_fill"></ImageView>
+
+
+                <TextView
+                    android:id="@+id/tv_description_a1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="20dp"
+                    android:text="Hướng dẫn "
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="28dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_set"
+                style="@style/AroundButton"
+                android:layout_width="220dp"
+                android:layout_height="320dp"
+                android:padding="10dp"
+                android:layout_toEndOf="@+id/btn_radom"
+                android:background="@drawable/button_radius_10"
+                android:backgroundTint="@color/green_main">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1.2in"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/close_round_fill"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv_description_a2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="20dp"
+                    android:text="Thi theo bộ đề"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="28dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_board"
+                style="@style/AroundButton"
+                android:layout_width="220dp"
+                android:layout_height="320dp"
+                android:padding="10dp"
+                android:layout_below="@+id/btn_radom"
+                android:background="@drawable/button_radius_10"
+                android:backgroundTint="@color/green_main">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1.2in"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/cancel_fill" />
+
+
+                <TextView
+                    android:id="@+id/tv_description_b1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="20dp"
+                    android:text="Các loại biển báo"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_review_question"
+                style="@style/AroundButton"
+                android:layout_width="220dp"
+                android:layout_height="320dp"
+                android:padding="10dp"
+                android:layout_alignTop="@+id/btn_board"
+                android:layout_toEndOf="@id/btn_board"
+                android:background="@drawable/button_radius_10"
+                android:backgroundTint="@color/green_main">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1.2in"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/open_book" />
+
+                <TextView
+                    android:id="@+id/tv_description_b2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="20dp"
+                    android:text="Ôn tập câu hỏi"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="28dp"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <include
+        android:id="@+id/bottom_bar"
+        layout="@layout/activity_navigation" />
+</RelativeLayout>

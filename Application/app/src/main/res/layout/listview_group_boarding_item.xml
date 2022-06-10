@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_group_traffic"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_title_group_test"
+                style="@style/PersonName"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Tiêu đề"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tv_num_group_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_group_test"
+                android:text="Tổng số câu"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_image_type_board"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_radius_10"
+            android:src="@drawable/i412c" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

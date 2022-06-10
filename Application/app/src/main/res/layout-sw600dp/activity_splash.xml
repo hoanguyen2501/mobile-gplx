@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="team2.mobileapp.gplx.view.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0.6in"
+            android:layout_height="0.4in"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"></ImageView>
+
+        <ImageView
+            android:id="@+id/splash"
+            android:layout_width="match_parent"
+            android:layout_height="500sp"
+            android:layout_below="@+id/logo"
+            android:src="@drawable/br_car">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/TextTitle"
+            android:layout_below="@id/splash"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="THI LÝ THUYẾT BẰNG LÁI XE"
+            android:textColor="@color/gray"
+            android:textSize="35dp"></TextView>
+
+        <TextView
+            android:id="@+id/textDescription"
+            style="@style/TextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="ỨNG DỤNG HỖ TRỢ THI LÝ THUYẾT BẰNG LÁI XE"
+            android:textColor="@color/gray"
+            android:textSize="26dp"></TextView>
+
+        <Button
+            android:id="@+id/btn_start"
+            style="@style/ButtonRouder"
+            android:layout_width="1.8in"
+            android:layout_height="0.4in"
+            android:layout_below="@id/textDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="BẮT ĐẦU"
+            android:textSize="24dp">
+
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

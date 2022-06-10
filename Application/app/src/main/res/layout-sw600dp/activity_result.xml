@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_main"
+    tools:context="team2.mobileapp.gplx.view.ResultActivity">
+
+    <TextView
+        android:id="@+id/title_result"
+        style="@style/TextTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+        android:text="CHÚC MỪNG"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+
+        />
+
+    <TextView
+        android:id="@+id/description_result"
+        style="@style/TextTitle"
+        android:layout_below="@id/title_result"
+        android:layout_centerHorizontal="true"
+        android:text="Bạn đã hoàn thành bài thi"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/description_result"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/radius_around">
+
+        <TextView
+            android:id="@+id/tv_result"
+            style="@style/TextTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="KẾT QUẢ"
+            android:textColor="@color/green_main"
+            android:textSize="30dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_result"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/tv_result"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/result_pass"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_result_show"
+            style="@style/TextTitle"
+            android:layout_below="@+id/iv_result"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="ĐẠT"
+            android:textSize="40dp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_result_next"
+            style="@style/ButtonRouder"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/br_button2"
+            android:gravity="center"
+            android:text="TIẾP TỤC"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btn_view_again"
+            style="@style/ButtonRouder"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_above="@+id/btn_result_next"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_title"
+            android:gravity="center"
+            android:text="XEM LẠI"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_view_again"
+            android:layout_below="@+id/tv_result_show"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/value_correct"
+                    android:layout_width="80dp"
+                    android:layout_height="160dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/yellow">
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_true_percent"
+                    style="@style/TextTitle"
+                    android:layout_above="@+id/value_correct"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:text="70%"
+                    android:textSize="24dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/value_incorrect"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/red">
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_false_percent"
+                    style="@style/TextTitle"
+                    android:layout_above="@+id/value_incorrect"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:text="30%"
+                    android:textSize="24dp"
+
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo_bottom"
+        android:layout_width="0.8in"
+        android:layout_height="0.4in"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/logo_white"
+
+        />
+</RelativeLayout>

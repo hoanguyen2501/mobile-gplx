@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_activity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle">
+
+        <ImageView
+            android:id="@+id/logo_top_board"
+            android:layout_width="0.8in"
+            android:layout_height="0.8in"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_title_activity_app"
+            android:layout_width="2in"
+            android:layout_height="0.4in"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/radius_around"
+            android:backgroundTint="@color/green_main"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:text="Ôn tập câu hỏi"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="team2.mobileapp.gplx.view.TestActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0.8in"
+            android:layout_marginTop="30dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/number_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_positionQuestion"
+                    style="@style/TextQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="40dp"/>
+
+                <TextView
+                    style="@style/TextQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="40dp"/>
+
+                <TextView
+                    android:id="@+id/tv_totalQuestion"
+                    style="@style/TextQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textSize="40dp"/>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/determinateBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_question"
+                android:animationResolution="1000"
+                android:indeterminate="false"
+                android:max="100"
+                android:maxHeight="20dip"
+                android:minHeight="20dip"
+                android:progressDrawable="@drawable/progress_custom" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_question"
+            style="@style/TextQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress_bar"
+            android:padding="20dp"
+            android:text="Câu 10. Bạn đã biết đi xe chưa?"
+            android:textSize="30dp">
+
+        </TextView>
+
+        <ImageView
+
+            android:id="@+id/iv_question"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_question"
+            android:scaleType="fitXY"
+             android:visibility="gone"
+            android:layout_centerHorizontal="true"/>
+
+
+        <ScrollView
+            android:id="@+id/group_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_question"
+            android:layout_marginBottom="120dp">
+
+            <RelativeLayout
+                android:id="@+id/list_answer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+                <RadioGroup
+                    android:id="@+id/rg_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rd_answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Answer"
+                        android:textSize="24dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/rd_answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Answer "
+                        android:textSize="24dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/rd_answer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Answer "
+                        android:textSize="24dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/rd_answer4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Answer "
+                        android:textSize="24dp"  />
+
+
+                    <RadioButton
+                        android:id="@+id/rd_answer5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Answer"
+                        android:textSize="24dp"  />
+
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:id="@+id/result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rg_answer"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_title_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đáp án:"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:textColor="@color/black"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title_result"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_radius_10"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:textColor="#FF5607"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="78dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_arrow"
+            app:backgroundTint="#00FFFFFF"
+            app:elevation="0dp"
+            app:fabSize="mini" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/btn_prev"
+                    style="@style/ButtonRouder"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+
+                    android:text="Câu trước"
+                    android:textAlignment="center"
+                    android:textSize="24dp"  />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    style="@style/ButtonRouder"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="Câu sau"
+                    android:textAlignment="center"
+                    android:textSize="24dp"  />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_bar_question"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        app:headerLayout="@layout/layout_header_show_test_progress">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:paddingLeft="50dp">
+
+                <GridLayout
+                    android:id="@+id/layout_question_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="200dp"
+                    android:columnCount="4"
+                    android:columnOrderPreserved="true"
+                    android:padding="10dp"
+                    android:rowCount="7"
+                    android:rowOrderPreserved="false"
+                    android:useDefaultMargins="true">
+
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </com.google.android.material.navigation.NavigationView>
+    >
+
+</androidx.drawerlayout.widget.DrawerLayout>

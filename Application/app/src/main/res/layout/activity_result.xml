@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_main"
+    tools:context="team2.mobileapp.gplx.view.ResultActivity">
+
+    <TextView
+        android:id="@+id/title_result"
+        style="@style/TextTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="CHÚC MỪNG"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+
+        />
+
+    <TextView
+        android:id="@+id/description_result"
+        style="@style/TextTitle"
+        android:layout_below="@id/title_result"
+        android:layout_centerHorizontal="true"
+        android:text="Bạn đã hoàn thành bài thi"
+
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/description_result"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/radius_around">
+
+        <TextView
+            android:id="@+id/tv_result"
+            style="@style/TextTitle"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="KẾT QUẢ"
+            android:textColor="@color/green_main"
+            android:textSize="25dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_result"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_result"
+            android:layout_centerHorizontal="true"
+
+            android:src="@drawable/result_pass"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_result_show"
+            style="@style/TextTitle"
+            android:layout_below="@+id/iv_result"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="ĐẠT"
+            android:textSize="35dp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_result_next"
+            style="@style/ButtonRouder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/br_button2"
+            android:text="TIẾP TỤC"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/btn_view_again"
+            style="@style/ButtonRouder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/btn_result_next"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_title"
+            android:text="XEM LẠI"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_view_again"
+            android:layout_below="@+id/tv_result_show"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/value_correct"
+                    android:layout_width="50dp"
+                    android:layout_height="160dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/yellow">
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_true_percent"
+                    style="@style/TextTitle"
+                    android:layout_above="@+id/value_correct"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:text="70%"
+                    android:textSize="15dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/value_incorrect"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/red">
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_false_percent"
+                    style="@style/TextTitle"
+                    android:layout_above="@+id/value_incorrect"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:text="30%"
+                    android:textSize="15dp"
+
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/logo_white"
+
+        />
+</RelativeLayout>

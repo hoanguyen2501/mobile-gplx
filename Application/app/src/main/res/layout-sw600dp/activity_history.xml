@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="team2.mobileapp.gplx.view.HistoryActivity">
+
+
+    <include
+        android:id="@+id/header_activity"
+        layout="@layout/header_activity_app" />
+
+    <ListView
+        android:id="@+id/lvItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_activity"
+        android:divider="@null"
+        android:scrollbars="none"
+        tools:listitem="@layout/listview_history_item">
+
+
+
+    </ListView>
+
+    <include
+        android:id="@+id/bottom_bar"
+        layout="@layout/activity_navigation" />
+</RelativeLayout>
